@@ -13,7 +13,7 @@ export default class DevscreensButton extends React.Component {
   }
 
   toggleModal = () => {
-    this.setState({ showModal: !this.state.showModal })
+    //this.setState({ showModal: !this.state.showModal })
   }
 
   render () {
@@ -23,11 +23,7 @@ export default class DevscreensButton extends React.Component {
           <RoundedButton onPress={this.toggleModal}>
             Open DevScreens
           </RoundedButton>
-          <Modal
-            visible={this.state.showModal}
-            onRequestClose={this.toggleModal}>
-            <PresentationScreen screenProps={{ toggle: this.toggleModal }} />
-          </Modal>
+
         </View>
       )
     } else {

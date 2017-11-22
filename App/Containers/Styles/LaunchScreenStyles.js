@@ -14,5 +14,12 @@ export default StyleSheet.create({
   },
   centered: {
     alignItems: 'center'
+  },
+  textStyle: {
+    alignItems : 'center',
+    textAlign : 'center',
+    width : '60%',
+    color : "#666666",
+    fontSize : 20
   }
 })
